@@ -59,7 +59,8 @@ int main()
             std::cout << airlines[airChoice-1] <<
             "\nTotal # of seats: " << capacity <<
             "\n# of A-Class seats: " << aClass(capacity, airChoice) <<
-            "\n# of S-Class seats: " << sClass(capacity, airChoice) << "\n\n";
+            "\n# of S-Class seats: " << sClass(capacity, airChoice) << 
+            "\nTotal number of economy seats: " << capacity-(aClass(capacity,airChoice)+sClass(capacity,airChoice)) << "\n\n";
         }
         else if(airChoice == 5)
             break;
